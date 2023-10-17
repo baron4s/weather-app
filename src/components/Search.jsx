@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { IoLocationSharp } from 'react-icons/io5';
 
 function Search({ onSearch }) {
@@ -7,6 +8,7 @@ function Search({ onSearch }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     onSearch(location);
+    setLocation('');
   };
 
   return (
@@ -29,5 +31,9 @@ function Search({ onSearch }) {
     </section>
   );
 }
+
+Search.propTypes = {
+  onSearch: PropTypes.func.isRequired,
+};
 
 export default Search;

@@ -20,5 +20,6 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off',
     'no-alert': 'off',
     'consistent-return': 'off',
+    'object-curly-newline': 'off',
   },
 };

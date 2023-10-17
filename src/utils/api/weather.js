@@ -14,4 +14,8 @@ const weather = async (city) => {
   }
 };
 
+const getIcon = (icon) => `https://openweathermap.org/img/wn/
+${icon}@2x.png`;
+
 export default weather;
+export { getIcon };
